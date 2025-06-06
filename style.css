@@ -30,6 +30,7 @@ nav>a{
     color: #FCF2E3;
     margin: 0 70px;
 
+    transition: color 0.5s ease;
 
     
 }
@@ -57,6 +58,8 @@ nav>a{
 .zero{
     font-size: 20px;
     font-weight: 900;
+
+    transition: color 0.5s ease;
 }
 
 .bl{
@@ -81,11 +84,16 @@ nav>a{
     height: 73px;
     font-size: 32px;
     border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
    
 }
 .text-start{
     font-size: 48px;
     font-weight: bolder;
+    color: #458375;
+    animation-name: anim1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 .start-div2{
     margin: 130px;
@@ -102,6 +110,18 @@ nav>a{
     font-weight: 800;
     color: #AE6B3E;
     font-size: 32px;
+    transition: color 0.5s ease;
+
+
+    animation-name: anim3;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+
+
+    animation-fill-mode: forwards;
+    animation-direction:alternate;
+    animation-timing-function:ease-out;
+    
 }
 
 .pustota{
@@ -159,6 +179,7 @@ nav>a{
     height: 73px;
     font-size: 32px;
     border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
     
 }
 .but{
@@ -185,6 +206,7 @@ footer{
     color: #FCF2E3;
     margin-top: 20px;
     font-weight: 500;
+    transition: color 0.5s ease;
 }
 .footer-h3{
     color: #FCF2E3;
@@ -194,4 +216,62 @@ footer{
 .footer-p{
     color: #FCF2E3;
     margin-top: 50px;
+}
+
+.img-start{
+
+    animation-name: anim2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+    animation-fill-mode: forwards;
+    animation-timing-function:ease-out;
+}
+
+
+@keyframes anim1 {
+    0%{
+       color:#458375;
+    }
+    50%{
+       color:#457D83;
+    }
+    100%{
+       color:#458375;
+    }
+}
+@keyframes anim2 {
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+@keyframes anim3 {
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
+    
+}
+
+
+.button:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.button2:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover{
+    color:#458375
+}
+.zero:hover{
+    color:#458375
 }
