@@ -228,8 +228,90 @@ footer{
     animation-timing-function:ease-out;
 }
 
+.feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback>*{
+    margin-bottom:15px;
+}
+.feedback-h2{
+    font-size: 48px;
+    color: #AE6B3E;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 800;
+}
+.feedback-p{
+    margin-top: 30px;
+    font-weight: 400;
+    color: #AE6B3E;
+    
+}
+.feedback-button{
+    color: #FCF2E3;
+    background-color: #AE6B3E;
+    border:none;
+    width: 262px;
+    height: 73px;
+    font-size: 32px;
+    border-radius: 50px;
+}
+input,textarea{
+    color:#AE6B3E;
 
-@keyframes anim1 {
+}
+label{
+    color:#AE6B3E;
+}
+
+/* планшеты горизонтально */
+@media (min-width: 992px) and (max-width: 1199px) {
+ 
+}
+
+/* планшеты вертикально */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* телефоны горизонтально */
+@media (max-width: 767px) {
+
+}
+
+/* телефоны вертикально */
+@media (max-width: 480px) {
+    header>nav{
+        display:none;
+    }
+    header{
+        width: auto;
+    }
+    .start-div2{
+        display: none;
+    }
+    .text-start{
+        margin-top: 40px;
+    }
+    .start{
+        display: flex;
+    }
+    .button{
+        justify-content: center;
+    }
+    .menu{
+        display: block;
+        
+    }
+}
+
+
+
+
+
+/*@keyframes anim1 {
     0%{
        color:#458375;
     }
@@ -274,4 +356,4 @@ a:hover{
 }
 .zero:hover{
     color:#458375
-}
+}*/
